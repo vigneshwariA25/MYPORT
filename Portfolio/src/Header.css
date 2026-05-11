@@ -1,0 +1,135 @@
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  animation: gradientFlow 15s ease infinite;
+}
+.hero {
+  min-height: 100vh;
+  /* background: linear-gradient(135deg, #6a4b7c, #a12a5c); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.title {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 12px 28px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  animation: slideFadeIn 1.5s ease-out forwards;
+  backdrop-filter: blur(10px);
+  text-shadow: 0 0 10px rgba(255,255,255,0.7);
+  background: rgba(255,255,255, 0.1);
+}
+
+.profile-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.profile-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+     animation: slideFadeIn 1.5s ease-out forwards;
+  backdrop-filter: blur(10px);
+  text-shadow: 0 0 10px rgba(255,255,255,0.7);
+  background: rgba(255,255,255, 0.1);
+   border-radius: 12px;
+}
+
+.hero-content p {
+  opacity: 0.85;
+  margin-bottom: 25px;
+    font-family: "Poppins", sans-serif;
+}
+
+.btn-group {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px;
+  border-radius: 40px;
+  display: inline-flex;
+  gap: 12px;
+}
+
+.btn {
+  border: none;
+  padding: 10px 22px;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 5s ease;
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.blue {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+
+.orange {
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+}
+
+.purple {
+  background: linear-gradient(135deg, #a855f7, #7c3aed);
+}
+.green {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+/* -------- Landing Animation -------- */
+.fade-in {
+  animation: fadeSlide 3.8s ease forwards;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
