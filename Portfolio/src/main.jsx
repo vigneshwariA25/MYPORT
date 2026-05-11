@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 
 import Header from "./Header";
 import Skills from "./Skills";
@@ -9,7 +9,7 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
-const router1 = createBrowserRouter([
+const router1 = createHashRouter([
   {
     path: "/",
     element: <Header />,
